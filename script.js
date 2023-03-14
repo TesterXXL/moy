@@ -92,8 +92,7 @@ okbtn.addEventListener("click", function(){
   let nv = new FormData();
   nv.append('nv', niv);
   fetch('request.html', {
-    method: 'POST',
-    body: nv,
+    method: 'GET',
   }).then(response => response.json())
     .then(data => {
       for(let i=0;i<data.length;i++) {

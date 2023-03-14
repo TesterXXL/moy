@@ -100,16 +100,16 @@ okbtn.addEventListener("click", function(){
         div=document.createElement('div');
         div.innerHTML+='<h2>'+ data[i].matiere +'</h2>';
         if(data[i].tp != '0') {
-          div.innerHTML+='<span class="attach"><input type="checkbox"><h4>TP:</h4><input type="number"></span>';
+          div.innerHTML+='<h4>TP:</h4><input type="number">';
         }
         if(data[i].orale != '0') {
-          div.innerHTML+='<span class="attach"><input type="checkbox"><h4>orale</h4><input type="number"></span>';
+          div.innerHTML+='<h4>orale</h4><input type="number">';
         }
-        div.innerHTML+='<span class="attach"><input type="checkbox"><h4>Controle 1: </h4><input type="number"></span>';
+        div.innerHTML+='<h4>Controle 1: </h4><input type="number">';
         if(data[i].controle != '1') {
-          div.innerHTML+='<span class="attach"><input type="checkbox"><h4>Controle 2: </h4><input type="number"></span>';
+          div.innerHTML+='<h4>Controle 2: </h4><input type="number">';
         }
-        div.innerHTML+='<span class="attach"><input type="checkbox"><h4>Synthése: </h4><input type="number" data-type="S"></span>';
+        div.innerHTML+='<h4>Synthése: </h4><input type="number" data-type="S"';
         div.innerHTML+='<input type="number" placeholder="Moyenne" class="my" data-coeff="'+ data[i].coeff +'" disabled="">';
         calc.appendChild(div);
       }

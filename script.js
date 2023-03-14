@@ -91,7 +91,7 @@ okbtn.addEventListener("click", function(){
   niv = niveau.value;
   let nv = new FormData();
   nv.append('nv', niv);
-  fetch('request.php', {
+  fetch('request.html', {
     method: 'POST',
     body: nv,
   }).then(response => response.json())
